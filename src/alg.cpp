@@ -1,6 +1,15 @@
-// Copyright 2021 NNTU-CS
-
 int cbinsearch(int *arr, int size, int value) {
-  //  поместить сюда реализацию алгоритма
-  return 0; // если ничего не найдено
+int sum, i;
+sum = 0;
+for (i = 0; size > i; i++) {
+if (arr[i] == value) {
+sum++;
+}
+}
+if (sum != 0) {
+return sum;
+}
+else {
+return 0;
+}
 }
